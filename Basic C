@@ -1,1 +1,18 @@
+//multiply table 
 
+#include <stdio.h>
+int main(){
+    int i,j,a,n;
+    scanf("%d %d", &a, &n); // a = table limit, n= miltiply upto
+    for (int i=1; i<=a; i++){
+        
+            for( j=1; j<=n; j++)
+            {
+                printf("%d x %d = %d\t", i,j,i*j);
+                if (j==n)
+                    printf("\n");
+            }
+    }
+
+return 0;    
+}
